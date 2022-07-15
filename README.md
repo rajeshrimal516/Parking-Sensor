@@ -1,10 +1,10 @@
 # Parking Sensor Realisation
 
-## GOAL of the project
+## Goal of the project
 
 With the development of the system, it is planned to implement a functional model that alerts the driver in real time to obstacles near the car. The system must be able to visually and audibly load inputs from sensors, process data and present them to the driver in real time with appropriate audible warnings.
 
-### Working
+## Working
 
 **1st step:** Only Green is shown in any one corner or all the corners as a warning that the obstacle is near but is safe as shown in figure below.
 
@@ -21,11 +21,13 @@ With the development of the system, it is planned to implement a functional mode
 The sound is also played as a warning to the driver along with the above visual outputs. The 6 different sounds are used and played in the left or right or both channels based on the side where the obstacle is encountered. For the 1st step warning, the sound with high delay is used, for 2nd step warning, the sound with the medium delay is used. And for the 3rd step warning the sound is played continuously in small time interval so that the driver can be warned and it is advisable to the driver not to go further from this position while parking.
 If there are two sensors reading the same value, the direction of drive is used to play the sound. An additional two generated sounds are played in situations where both front sensors are dominant hazard levels and read the same values, or both rear sensors are dominant hazard levels and read the same values. These two additional sounds are played on both channels.
 
-Development Environments required 
+## Development Environments required 
 
 Softwares like Visual Studio, Eclipse or similar development environment supporting the C++ programming and the use of the libraries such as Open GL, Sound libraries and so on. The testing is done in the personal computer with the necessary hardware for the sound.
 
-**Keys Used for real-time simulation**
+## Simulation
+
+**Keyboard Keys Used for real-time simulation**
 |Warning Sign |Front Left (mode 0)|Front Right (mode 1)|Rear left (mode 2)|Rear Right (mode 3)|
 |-----------|-------------|-----------|-------------|-------------|
 |**Green Only**|q|a|t|f|
